@@ -1,0 +1,19 @@
+object Form_Grafic: TForm_Grafic
+  Left = 90
+  Top = 74
+  Width = 598
+  Height = 433
+  Caption = 'Процесс моделирования'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnActivate = FormActivate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  TextHeight = 13
+end

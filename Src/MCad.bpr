@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="..\Release\MCad.exe"/>
+    <OBJFILES value="MCad.obj GrpFrm.obj compl.obj MCBase.obj MCFile.obj MCOptions.obj 
+      MCSys.obj nrutil.obj Unit_VvodPerFunc.obj polynom.obj ProjFrm.obj 
+      OptionsFrm.obj GrpApi\Grp.obj GrpApi\PropFrm.obj Els.obj MCProj.obj 
+      MCApp.obj MainFrm.obj MCElBts.obj SmPropFrm.obj InPropFrm.obj 
+      Elements\MCElement.obj Elements\MCStdElement.obj Elements\MCLink.obj 
+      Elements\Z\MCZ.obj Elements\K\MCK.obj Elements\K\KPropFrm.obj 
+      Elements\1P\MC1P.obj Elements\Free\MCFree.obj Elements\Sinus\MCSinus.obj 
+      Elements\Sinus\SinPropFrm.obj Elements\NoSense\MCNoSense.obj 
+      Elements\NoSense\NoSensePropFrm.obj Elements\Rest\MCRest.obj 
+      Elements\Rest\RestPropFrm.obj Elements\NoSenseRest\MCNoSenseRest.obj 
+      Elements\NoSenseRest\NoSenseRestPropFrm.obj Elements\Luft\MCLuft.obj 
+      Elements\Luft\LuftPropFrm.obj Elements\UBRelay\MCUBRelay.obj 
+      Elements\UBRelay\UBRelayFrm.obj Elements\NUBRelay\MCNUBRelay.obj 
+      Elements\NUBRelay\NUBRelayPropFrm.obj Elements\P\MCP.obj 
+      Elements\1P\PPropFrm.obj Elements\P\PRegPropFrm.obj Elements\PD\MCPD.obj 
+      Elements\PD\PDRegPropFrm.obj Elements\I\MCI.obj Elements\I\IRegPropFrm.obj 
+      Elements\PI\MCPI.obj Elements\PI\PIRegPropFrm.obj Elements\PID\MCPID.obj 
+      Elements\PID\PIDRegPropFrm.obj Elements\TL\MCTL.obj CalcParamFrm.obj 
+      Elements\TL\TransLinkPropFrm.obj Elements\TL\CharFrm.obj 
+      Elements\TL\NPCharFrm.obj AboutFrm.obj Elements\Free\FreePropFrm.obj 
+      GaussNoisePropFrm.obj Elements\Z\ZPropFrm.obj GrpApi\GrpWin.obj 
+      Field\MCField.obj Field\MCRender.obj Field\MCDDRender.obj 
+      Field\DDErrors.obj MCClipBoard.obj"/>
+    <RESFILES value="MCad.res MCadZ.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) GrpFrm.dfm Unit_VvodPerFunc.dfm ProjFrm.dfm OptionsFrm.dfm 
+      GrpApi\PropFrm.dfm MainFrm.dfm SmPropFrm.dfm InPropFrm.dfm 
+      Elements\K\KPropFrm.dfm Elements\Sinus\SinPropFrm.dfm 
+      Elements\NoSense\NoSensePropFrm.dfm Elements\Rest\RestPropFrm.dfm 
+      Elements\NoSenseRest\NoSenseRestPropFrm.dfm Elements\Luft\LuftPropFrm.dfm 
+      Elements\UBRelay\UBRelayFrm.dfm Elements\NUBRelay\NUBRelayPropFrm.dfm 
+      Elements\1P\PPropFrm.dfm Elements\P\PRegPropFrm.dfm 
+      Elements\PD\PDRegPropFrm.dfm Elements\I\IRegPropFrm.dfm 
+      Elements\PI\PIRegPropFrm.dfm Elements\PID\PIDRegPropFrm.dfm 
+      CalcParamFrm.dfm Elements\TL\TransLinkPropFrm.dfm Elements\TL\CharFrm.dfm 
+      Elements\TL\NPCharFrm.dfm AboutFrm.dfm Elements\Free\FreePropFrm.dfm 
+      GaussNoisePropFrm.dfm Elements\Z\ZPropFrm.dfm GrpApi\GrpWin.dfm"/>
+    <LIBFILES value="Videvo\ddraw.lib"/>
+    <LIBRARIES value="vclx.lib bcbsmp.lib vcl.lib rtl.lib"/>
+    <SPARELIBS value="rtl.lib vcl.lib bcbsmp.lib vclx.lib"/>
+    <PACKAGES value="rtl.bpi vcl.bpi vclx.bpi bcbsmp.bpi dbrtl.bpi vcldb.bpi adortl.bpi 
+      ibsmp.bpi bdertl.bpi vcldbx.bpi qrpt.bpi teeui.bpi teedb.bpi tee.bpi 
+      dss.bpi teeqr.bpi ibxpress.bpi"/>
+    <PATHCPP value=".;GrpApi;GrpApi;Elements;Elements;Elements;Elements\Z;Elements\K;Elements\K;Elements\1P;Elements\Free;Elements\Sinus;Elements\Sinus;Elements\NoSense;Elements\NoSense;Elements\Rest;Elements\Rest;Elements\NoSenseRest;Elements\NoSenseRest;Elements\Luft;Elements\Luft;Elements\UBRelay;Elements\UBRelay;Elements\NUBRelay;Elements\NUBRelay;Elements\P;Elements\1P;Elements\P;Elements\PD;Elements\PD;Elements\I;Elements\I;Elements\PI;Elements\PI;Elements\PID;Elements\PID;Elements\TL;Elements\TL;Elements\TL;Elements\TL;Elements\Free;Elements\Z;GrpApi;Field;Field;Field;Field"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="MCad.cpp"/>
+    <INCLUDEPATH value="Field;Elements\PID;Elements\PI;Elements\I;Elements\PD;Elements\P;Elements\NUBRelay;Elements\UBRelay;Elements\Luft;Elements\NoSenseRest;Elements\Rest;Elements\NoSense;Elements\Sinus;Elements\Free;Elements\1P;Elements\K;Elements\Z;Elements\TL;Elements;..\..;GrpApi;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="Field;Elements\PID;Elements\PI;Elements\I;Elements\PD;Elements\P;Elements\NUBRelay;Elements\UBRelay;Elements\Luft;Elements\NoSenseRest;Elements\Rest;Elements\NoSense;Elements\Sinus;Elements\Free;Elements\1P;Elements\K;Elements\Z;Elements\TL;Elements;..\..;GrpApi;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-src_suffix cpp -D_DEBUG -IField -IElements\PID -IElements\PI -IElements\I 
+      -IElements\PD -IElements\P -IElements\NUBRelay -IElements\UBRelay 
+      -IElements\Luft -IElements\NoSenseRest -IElements\Rest -IElements\NoSense 
+      -IElements\Sinus -IElements\Free -IElements\1P -IElements\K -IElements\Z 
+      -IElements\TL -IElements -I..\.. -IGrpApi -I$(BCB)\include 
+      -I$(BCB)\include\vcl -boa"/>
+    <CFLAG1 value="-Od -H=c:\PROGRA~2\borland\CBUILD~1\lib\vcl60.csm -Hc -Vx -Ve -fp -ff -X- 
+      -r- -a8 -6 -b- -k -y -v -vi- -c -tW -tWM"/>
+    <PFLAGS value="-$Y+ -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="MCad.cpp" FORMNAME="" UNITNAME="MCad" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MCad.res" FORMNAME="" UNITNAME="MCad" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GrpFrm.cpp" FORMNAME="Form_Grafic" UNITNAME="GrpFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="COMPL.CPP" FORMNAME="" UNITNAME="compl" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MCBase.cpp" FORMNAME="" UNITNAME="MCBase" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MCFile.cpp" FORMNAME="" UNITNAME="MCFile" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MCOptions.cpp" FORMNAME="" UNITNAME="MCOptions" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MCSys.cpp" FORMNAME="" UNITNAME="MCSys" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="nrutil.cpp" FORMNAME="" UNITNAME="nrutil" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit_VvodPerFunc.cpp" FORMNAME="Form_PerFunc" UNITNAME="Unit_VvodPerFunc" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="polynom.cpp" FORMNAME="" UNITNAME="polynom" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ProjFrm.cpp" FORMNAME="FProj" UNITNAME="ProjFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="OptionsFrm.cpp" FORMNAME="FOptions" UNITNAME="OptionsFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MCadZ.res" FORMNAME="" UNITNAME="MCadZ" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GrpApi\Grp.cpp" FORMNAME="" UNITNAME="Grp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GrpApi\PropFrm.cpp" FORMNAME="FProperty" UNITNAME="PropFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Els.cpp" FORMNAME="" UNITNAME="Els" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MCProj.cpp" FORMNAME="" UNITNAME="MCProj" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MCApp.cpp" FORMNAME="" UNITNAME="MCApp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MainFrm.cpp" FORMNAME="FMain" UNITNAME="MainFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Videvo\ddraw.lib" FORMNAME="" UNITNAME="ddraw" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MCElBts.cpp" FORMNAME="" UNITNAME="MCElBts" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SmPropFrm.cpp" FORMNAME="FSmProp" UNITNAME="SmPropFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="InPropFrm.cpp" FORMNAME="FInProp" UNITNAME="InPropFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\MCElement.cpp" FORMNAME="" UNITNAME="MCElement" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\MCStdElement.cpp" FORMNAME="" UNITNAME="MCStdElement" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\MCLink.cpp" FORMNAME="" UNITNAME="MCLink" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\Z\MCZ.cpp" FORMNAME="" UNITNAME="MCZ" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\K\MCK.cpp" FORMNAME="" UNITNAME="MCK" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\K\KPropFrm.cpp" FORMNAME="FKProp" UNITNAME="KPropFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\1P\MC1P.cpp" FORMNAME="" UNITNAME="MC1P" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\Free\MCFree.cpp" FORMNAME="" UNITNAME="MCFree" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\Sinus\MCSinus.cpp" FORMNAME="" UNITNAME="MCSinus" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\Sinus\SinPropFrm.cpp" FORMNAME="FSinProp" UNITNAME="SinPropFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\NoSense\MCNoSense.cpp" FORMNAME="" UNITNAME="MCNoSense" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\NoSense\NoSensePropFrm.cpp" FORMNAME="FNoSenseProp" UNITNAME="NoSensePropFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\Rest\MCRest.cpp" FORMNAME="" UNITNAME="MCRest" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\Rest\RestPropFrm.cpp" FORMNAME="FRestProp" UNITNAME="RestPropFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\NoSenseRest\MCNoSenseRest.cpp" FORMNAME="" UNITNAME="MCNoSenseRest" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\NoSenseRest\NoSenseRestPropFrm.cpp" FORMNAME="FNoSenseRestProp" UNITNAME="NoSenseRestPropFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\Luft\MCLuft.cpp" FORMNAME="" UNITNAME="MCLuft" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\Luft\LuftPropFrm.cpp" FORMNAME="FLuftProp" UNITNAME="LuftPropFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\UBRelay\MCUBRelay.cpp" FORMNAME="" UNITNAME="MCUBRelay" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\UBRelay\UBRelayFrm.cpp" FORMNAME="FUBRelayProp" UNITNAME="UBRelayFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\NUBRelay\MCNUBRelay.cpp" FORMNAME="" UNITNAME="MCNUBRelay" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\NUBRelay\NUBRelayPropFrm.cpp" FORMNAME="FNUBRelayProp" UNITNAME="NUBRelayPropFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\P\MCP.cpp" FORMNAME="" UNITNAME="MCP" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\1P\PPropFrm.cpp" FORMNAME="F1PProp" UNITNAME="PPropFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\P\PRegPropFrm.cpp" FORMNAME="FPProp" UNITNAME="PRegPropFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\PD\MCPD.cpp" FORMNAME="" UNITNAME="MCPD" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\PD\PDRegPropFrm.cpp" FORMNAME="FPDProp" UNITNAME="PDRegPropFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\I\MCI.cpp" FORMNAME="" UNITNAME="MCI" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\I\IRegPropFrm.cpp" FORMNAME="FIProp" UNITNAME="IRegPropFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\PI\MCPI.cpp" FORMNAME="" UNITNAME="MCPI" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\PI\PIRegPropFrm.cpp" FORMNAME="FPIProp" UNITNAME="PIRegPropFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\PID\MCPID.cpp" FORMNAME="" UNITNAME="MCPID" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\PID\PIDRegPropFrm.cpp" FORMNAME="FPIDProp" UNITNAME="PIDRegPropFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\TL\MCTL.cpp" FORMNAME="" UNITNAME="MCTL" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CalcParamFrm.cpp" FORMNAME="FCalcParam" UNITNAME="CalcParamFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\TL\TransLinkPropFrm.cpp" FORMNAME="FTransLinkProp" UNITNAME="TransLinkPropFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\TL\CharFrm.cpp" FORMNAME="FChar" UNITNAME="CharFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\TL\NPCharFrm.cpp" FORMNAME="FNPChar" UNITNAME="NPCharFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AboutFrm.cpp" FORMNAME="FAbout" UNITNAME="AboutFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\Free\FreePropFrm.cpp" FORMNAME="FFreeProp" UNITNAME="FreePropFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GaussNoisePropFrm.cpp" FORMNAME="FGaussNoiseProp" UNITNAME="GaussNoisePropFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Elements\Z\ZPropFrm.cpp" FORMNAME="FZProp" UNITNAME="ZPropFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GrpApi\GrpWin.cpp" FORMNAME="FGrp" UNITNAME="GrpWin" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Field\MCField.cpp" FORMNAME="" UNITNAME="MCField" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Field\MCRender.cpp" FORMNAME="" UNITNAME="MCRender" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Field\MCDDRender.cpp" FORMNAME="" UNITNAME="MCDDRender" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Field\DDErrors.cpp" FORMNAME="" UNITNAME="DDErrors" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MCClipBoard.cpp" FORMNAME="" UNITNAME="MCClipBoard" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1049
+CodePage=1251
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+c:\program files (x86)\borland\cbuilder6\Bin\dclite50.bpl=Borland Integrated Translation Environment
+
+[HistoryLists\hlIncludePath]
+Count=10
+Item0=Elements\PID;Elements\PI;Elements\I;Elements\PD;Elements\P;Elements\NUBRelay;Elements\UBRelay;Elements\Luft;Elements\NoSenseRest;Elements\Rest;Elements\NoSense;Elements\Sinus;Elements\Free;Elements\1P;Elements\K;Elements\Z;Elements\TL;Elements;..\..;GrpApi;$(BCB)\include;$(BCB)\include\vcl
+Item1=Elements\PID;Elements\PI;Elements\I;Elements\PD;Elements\P;Elements\NUBRelay;Elements\UBRelay;Elements\Luft;Elements\NoSenseRest;Elements\Rest;Elements\NoSense;Elements\Sinus;Elements\Free;Elements\1P;Elements\K;Elements\Z;Elements\TL;Elements;..\..;GrpApi;Plugins;$(BCB)\include;$(BCB)\include\vcl
+Item2=Elements\PID;Elements\PI;Elements\I;Elements\PD;Elements\P;Elements\NUBRelay;Elements\UBRelay;Elements\Luft;Elements\NoSenseRest;Elements\Rest;Elements\NoSense;Elements\Sinus;Elements\Free;Elements\1P;Elements\K;Elements\Z;Elements\TL;Elements;..\..\..\прога(29,03,2004);GrpApi;Plugins;$(BCB)\include;$(BCB)\include\vcl
+Item3=Elements\TL;Elements;..\..;GrpApi;Plugins;$(BCB)\include;$(BCB)\include\vcl
+Item4=..\..;GrpApi;Plugins;$(BCB)\include;$(BCB)\include\vcl
+Item5=GrpApi;Plugins;$(BCB)\include;$(BCB)\include\vcl
+Item6=$(BCB)\include;$(BCB)\include\vcl
+Item7=Docking;..\..;GrpApi;Plugins;$(BCB)\include;$(BCB)\include\vcl
+Item8=Docking;..\..\..\Projects;GrpApi;Plugins;$(BCB)\include;$(BCB)\include\vcl
+Item9=Plugins;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=10
+Item0=Elements\PID;Elements\PI;Elements\I;Elements\PD;Elements\P;Elements\NUBRelay;Elements\UBRelay;Elements\Luft;Elements\NoSenseRest;Elements\Rest;Elements\NoSense;Elements\Sinus;Elements\Free;Elements\1P;Elements\K;Elements\Z;Elements\TL;Elements;..\..;GrpApi;$(BCB)\lib\obj;$(BCB)\lib
+Item1=Elements\PID;Elements\PI;Elements\I;Elements\PD;Elements\P;Elements\NUBRelay;Elements\UBRelay;Elements\Luft;Elements\NoSenseRest;Elements\Rest;Elements\NoSense;Elements\Sinus;Elements\Free;Elements\1P;Elements\K;Elements\Z;Elements\TL;Elements;..\..;GrpApi;Plugins;$(BCB)\lib\obj;$(BCB)\lib
+Item2=Elements\PID;Elements\PI;Elements\I;Elements\PD;Elements\P;Elements\NUBRelay;Elements\UBRelay;Elements\Luft;Elements\NoSenseRest;Elements\Rest;Elements\NoSense;Elements\Sinus;Elements\Free;Elements\1P;Elements\K;Elements\Z;Elements\TL;Elements;..\..\..\прога(29,03,2004);GrpApi;Plugins;$(BCB)\lib\obj;$(BCB)\lib
+Item3=Elements\TL;Elements;..\..;GrpApi;Plugins;$(BCB)\lib\obj;$(BCB)\lib
+Item4=..\..;GrpApi;Plugins;$(BCB)\lib\obj;$(BCB)\lib
+Item5=GrpApi;Plugins;$(BCB)\lib\obj;$(BCB)\lib
+Item6=$(BCB)\lib\obj;$(BCB)\lib
+Item7=Docking;..\..;GrpApi;Plugins;$(BCB)\lib\obj;$(BCB)\lib
+Item8=Docking;..\..\..\Projects;GrpApi;Plugins;$(BCB)\lib\obj;$(BCB)\lib
+Item9=Plugins;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[HistoryLists\hlFinalOutputDir]
+Count=7
+Item0=..\Release\
+Item1=..\Release
+Item2=C:\Prog\C\CBuilder5\Projects\Model Cad\Release\
+Item3=C:\Prog\C\CBuilder5\Projects\Model Cad\Release
+Item4=..\Bin\
+Item5=c:\prog\c\cbpp5\cbuilder5\Projects\Model Cad\Bin\
+Item6=$(BCB)\Projects\Model Cad\Bin
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

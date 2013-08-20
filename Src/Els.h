@@ -1,0 +1,304 @@
+//---------------------------------------------------------------------------
+#ifndef ElsH
+#define ElsH
+//---------------------------------------------------------------------------
+#include "Elements\TL\MCTL.h"
+#include "Elements\Z\MCZ.h"
+#include "Elements\K\MCK.h"
+#include "Elements\1P\MC1P.h"
+#include "Elements\Free\MCFree.h"
+#include "Elements\Sinus\MCSinus.h"
+#include "Elements\NoSense\MCNoSense.h"
+#include "Elements\Rest\MCRest.h"
+#include "Elements\NoSenseRest\MCNoSenseRest.h"
+#include "Elements\Luft\MCLuft.h"
+#include "Elements\UBRelay\MCUBRelay.h"
+#include "Elements\NUBRelay\MCNUBRelay.h"
+#include "Elements\P\MCP.h"
+#include "Elements\PD\MCPD.h"
+#include "Elements\I\MCI.h"
+#include "Elements\PI\MCPI.h"
+#include "Elements\PID\MCPID.h"
+
+
+#include "CharFrm.h"
+#include "SmPropFrm.h"
+#include "InPropFrm.h"
+#include "GaussNoisePropFrm.h"
+//---------------------------------------------------------------------------
+#define ELEM_WIDTH 23
+#define ELEM_HEIGHT 23
+#define WM_SETDATA WM_USER + 1
+#define WM_RESETDATA WM_USER + 2
+//---------------------------------------------------------------------------
+typedef void __fastcall (__closure *TSetData)(void);
+//---------------------------------------------------------------------------
+class Mod_Summator: public CElement
+{
+public:
+	bool Invers1;
+	bool Invers2;
+   bool Invers3;
+	complex <long double> *In;
+	complex <long double> *In2;
+	complex <long double> *Out;
+	CElement *Input;
+	CElement *Input2;
+	CElement *Output;
+	CElement *Mn_Summator;
+	Mod_Summator(CElement*);
+	virtual void VICHISLENIE(int index, int end, long double DT);
+	virtual void DELETE_GRAFIC_MASSIV();
+   virtual void DelLink(void *LinkPtr);
+        void DelInfo(void);
+	~Mod_Summator();
+};
+//----------------------Summator------------------------------------
+class CSummator : public CElement
+{
+private:
+	TFSmProp *FSmProp;
+   void __fastcall GetInvers(CLink *Link, bool *Invers, bool OutOrient);
+   void __fastcall SetInvers(CLink *Link, bool *Invers, bool OutOrient);
+protected:
+   virtual bool CheckOut(void);
+public:
+   bool *InversIn1;
+   bool *InversIn2;
+   bool *InversIn3;
+   bool *InversOut;
+   CLink *InLink1;
+   CLink *InLink2;
+   CLink *InLink3;
+   CLink *OutLink;
+   CElement *InEl1;
+   CElement *InEl2;
+   CElement *InEl3;
+   CElement *OutEl;
+   Mod_Summator *Summator1;
+   Mod_Summator *Summator2;
+	CSummator(void);
+   BOOL __fastcall virtual OrientBusy(T_ORIENT OR);
+   virtual void __fastcall SetData(void);
+   virtual void __fastcall ShowGrp(void);
+   virtual void DelLink(void *LinkPtr);
+   virtual void __fastcall GetDump(void *&Dump, DWORD &DumpSize);
+   virtual void __fastcall SetDump(void *&Dump, DWORD &DumpSize);
+   void DelInfo(void);
+   ~CSummator();
+};
+//---------------------------------------------------------------------------
+class CUzel: public CElement
+{
+public:
+	bool Mnogo_uzlov;
+	complex <long double>*InOut;
+	CElement *Input;
+	CElement *Output2;
+	CElement *Output;
+	CElement *Mn_Uzel;
+	CUzel(CElement*);
+   virtual void VICHISLENIE(int index, int end, long double DT);
+	virtual void DELETE_GRAFIC_MASSIV();
+   virtual void DelLink(void *LinkPtr){}
+   virtual void DelLink(void *LinkPtr, bool &DelIt);
+      virtual void DelInfo(void);
+	~CUzel();
+};
+//----------------------Unit----------------------------------------
+class CUnit : public CElement
+{
+protected:
+   virtual bool CheckOut(void);
+public:
+   int Kol_vo_Uzlov;
+   int Kol_vo_Out;
+   CLink *InLink;
+   TList *OutLinks;
+   TList *OutEls;
+   CElement *InEl;
+   complex <long double> *In;
+   complex <long double> *Out;
+   CUzel **Uzel;
+   CElement *Input;
+   CElement **Output;
+	CUnit(void);
+   void __fastcall AddOutLink(CLink *OutLink, CElement *OutEl);
+   BOOL __fastcall CheckLink(CLink *Link);
+   BOOL __fastcall virtual OrientBusy(T_ORIENT OR);
+   virtual void __fastcall ShowGrp(void);
+  	void Razbivka_Sum_Uzel();
+   void ObrPer(void);
+   virtual void VICHISLENIE(int index, int end, long double DT);
+	virtual void DELETE_GRAFIC_MASSIV();
+	void Svjaz_Out_s_In(CElement *, CUzel *);
+   virtual void DelLink(void *LinkPtr);
+      virtual void DelInfo(void);
+   virtual ~CUnit(void);
+};
+//------------------------------------------------------------------
+class CIn : public CElement
+{
+private:
+	enum TInfluence{iSingle, iImpuls, iLine, iSinus, iSaw, iRect, iRand, iFile};
+   TInfluence Influence;
+   long double V1TA;
+   long double VLK;
+   long double VSinA;
+   long double VSinW;
+   long double VSinF;
+   long double VSA;
+   long double VSS;
+   long double VRA;
+   long double VRS;
+   long double VRandMW;
+   long double VRandD;
+   long double GradToRadians;
+   long double SawK;
+   AnsiString VFFN;
+   TFInProp *FInProp;
+protected:
+   virtual bool CheckOut(void);
+public:
+   complex <long double>*Out;
+	CLink *OutLink;
+   CElement *OutEl;
+   CElement *Output;
+   CIn(void);
+   BOOL __fastcall virtual OrientBusy(T_ORIENT OR);
+   virtual void __fastcall SetData(void);
+   virtual void __fastcall ShowGrp(void);
+   virtual void VICHISLENIE(int index, int end, long double DT);
+   virtual void DELETE_GRAFIC_MASSIV();
+   virtual void DelLink(void *LinkPtr);
+   virtual void __fastcall GetDump(void *&Dump, DWORD &DumpSize);
+   virtual void __fastcall SetDump(void *&Dump, DWORD &DumpSize);
+   virtual void DelInfo(void);
+   ~CIn();
+};
+//------------------------------------------------------------------
+class CGaussNoise: public CIn
+{
+private:
+	TFGaussNoiseProp *FGaussNoiseProp;
+	long double MathWaiting;
+	long double Dispersion;
+public:
+	CGaussNoise();
+	virtual void VICHISLENIE(int index, int end, long double DT);
+   virtual void __fastcall SetData(void);
+   virtual void __fastcall GetDump(void *&Dump, DWORD &DumpSize);
+   virtual void __fastcall SetDump(void *&Dump, DWORD &DumpSize);
+};
+//------------------------------------------------------------------
+class COut : public CElement
+{
+protected:
+   virtual bool CheckOut(void);
+public:
+	CLink *InLink;
+   CElement *InEl;
+   CElement *Input;
+	complex <long double> *In;
+	complex <long double> *Y_GRAFIK;
+   COut(void);
+   virtual void __fastcall ShowGrp(void);
+   BOOL __fastcall virtual OrientBusy(T_ORIENT OR);
+   virtual void VICHISLENIE(int index, int end, long double DT);
+	virtual void DELETE_GRAFIC_MASSIV();
+   virtual void DelLink(void *LinkPtr);
+   virtual void __fastcall GetDump(void *&Dump, DWORD &DumpSize);
+   virtual void __fastcall SetDump(void *&Dump, DWORD &DumpSize);
+   ~COut();
+};
+//----------------------Список-----------------------------------------
+class Massiv_DopSv
+{
+public:
+Massiv_DopSv(int n);
+~Massiv_DopSv();
+int Konez_Mas;
+CElement **Dop_Massiv;
+Massiv_DopSv *pr;   //последующий узел
+};
+
+class Node_DopMas
+{
+public:
+Node_DopMas();
+void Add_DopMas(int N_znach);
+void Add_Nachalo_Massiv(Node_DopMas*);
+void Add_Konez_Masssiv(Node_DopMas*);
+//void Add_Nachalo_Massiv2(Node_DopMas*);
+//void Add_Nachalo_Massiv3(Node_DopMas*);
+~Node_DopMas();
+Massiv_DopSv* First;
+Massiv_DopSv* End;
+Massiv_DopSv* Pnew;
+Massiv_DopSv* Pold;
+int count_M;
+};
+//----------------------Els-----------------------------------------
+class CEls
+{
+private:
+   T_ORIENT IN_OR;
+   CElement *InElLnk;
+  	Node_DopMas *Obr_Sv;
+  	Node_DopMas *Pob_Sv;
+  	Node_DopMas *Per_Sv;
+	LPDIRECTDRAW lpDDraw;
+   LPDIRECTDRAWSURFACE lpDDS;
+public:
+	int Nachalo_count;
+	bool X_input;
+   bool Y_output;
+	bool CalcOrder;
+	int Chislo_Up_Svjaz;
+        int Chislo_Dop_Svjaz;
+	int CountStep;
+   long double DT;
+   long double T;
+   long double DW;
+   long double W;
+	bool* Error_NULL_Svz; // массив ОШИБОК связи
+	bool* Up_Svz_Naidena; //массив наличия главных связей
+	int *ind_Up; //массив хранящий число элементов в гл связях
+   TList *TLs;
+   TList *Sms;
+   TList *Us;
+   TList *Ls;
+   TList *Ins;
+   TList *Outs;
+   CElement *CurrentAdd;
+	CElement *Error;
+	CElement *Nachalo_Dvigenija;      //начальный объект
+	CElement **Vspom_Massiv; //вспомогательный массив
+	CElement ***Up_Svz;
+	Node_DopMas **Dop_Svz;// массив списка для массивов элементов дополнительных связей
+	CEls(void);
+   void SetDD(LPDIRECTDRAW _lpDDraw, LPDIRECTDRAWSURFACE _lpDDS)
+   {
+   	lpDDraw = _lpDDraw;
+      lpDDS = _lpDDS;
+   }
+   void Add(T_ID ID_ELEM, int Left, int Top, int SX, int SY,
+            void *ElDump = NULL, DWORD ElDumpSize = 0);
+   void __fastcall virtual Linking(CElement *El, T_ORIENT OR);
+   void AddLink(CElement *InEl, CElement *OutEl,
+                T_ORIENT IN_OR, T_ORIENT OUT_OR);
+   void Del(CElement *DelAddr);
+	void DELETE_SVJAZ();
+	void Opredelenie_Up_Svz();
+	void Opredelenie_Up_Svjaz(CElement ** &, int&, bool&, bool&, int, Node_DopMas* &);  //Определение главной связи
+	void Opredelenie_Pobochn_Svjaz(CElement ** &,int &, bool&, bool&,int, Node_DopMas* & ); //Определение дополнительных связей
+	bool Rekursija_Uzel(CElement ** &, int& ,CElement *, int, bool&, bool& ); //Определение главной связи
+	bool Rekursija_Pobochn(CElement ** &, int& ,CElement *,int,int, bool&, bool& ); //Определение побочной связи
+	void RASCHET_SISTEM(); // РАСЧЕТ СИСТЕМЫ с многими входами и выходами
+	void RASCHET_SISTEM_STEP();
+   void Done(void);
+   void DelSmInfo(void);
+   ~CEls(void);
+};
+//---------------------------------------------------------------------------
+#endif
