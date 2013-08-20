@@ -20,7 +20,7 @@ public:		// User declarations
    long double DT;
 	long double T;
    bool EnAct;
-	complex<long double> *Y;
+	std::complex<long double> *Y;
 
 	__fastcall TForm_Grafic(TComponent* Owner);
    void __fastcall SetAxName(AnsiString X, AnsiString Y);

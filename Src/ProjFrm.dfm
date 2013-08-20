@@ -11,7 +11,7 @@ object FProj: TFProj
   Font.Style = []
   FormStyle = fsMDIChild
   OldCreateOrder = False
-  Position = poOwnerFormCenter
+  Position = poScreenCenter
   Visible = True
   PixelsPerInch = 96
   TextHeight = 13

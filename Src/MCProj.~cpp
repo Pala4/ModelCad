@@ -976,8 +976,8 @@ void __fastcall CProjCont::NewProject()
 {
 	CProj *Proj = new CProj;
    Proj->Left = DefaultWndLeft;
-   Proj->Top = 0;//DefaultWndTop;
-   Proj->Width = 0;//DefaultWndWidth;
+   Proj->Top = DefaultWndTop;
+   Proj->Width = DefaultWndWidth;
    Proj->Height = DefaultWndHeight;
    Proj->FieldWidth = DefaultFieldWidth;
    Proj->FieldHeight = DefaultFieldHeight;
