@@ -1,6 +1,6 @@
 object FProj: TFProj
-  Left = 768
-  Top = 409
+  Left = 240
+  Top = 191
   Width = 291
   Height = 204
   Color = clBtnFace
@@ -11,7 +11,7 @@ object FProj: TFProj
   Font.Style = []
   FormStyle = fsMDIChild
   OldCreateOrder = False
-  Position = poOwnerFormCenter
+  Position = poDefault
   Visible = True
   PixelsPerInch = 96
   TextHeight = 13

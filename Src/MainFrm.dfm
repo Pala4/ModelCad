@@ -1,6 +1,6 @@
 object FMain: TFMain
-  Left = 299
-  Top = 282
+  Left = 505
+  Top = 318
   AutoScroll = False
   Caption = 'Model Cad v1.0'
   ClientHeight = 339

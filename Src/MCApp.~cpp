@@ -263,7 +263,7 @@ void __fastcall CApp::Init(CBase *Parent)
    ProjCont = new CProjCont(CFGFile, DSKFile);
 
    ProjCont->DefaultWndLeft = 0;
-   ProjCont->DefaultWndTop = 0;
+   ProjCont->DefaultWndTop = ((TForm*)Parent)->Top();
    ProjCont->DefaultWndWidth = SysInfo->ScrWidth*0.8;
    ProjCont->DefaultWndHeight = SysInfo->MaxWinHeight*0.9 - ((TForm*)Parent)->Height;
 
