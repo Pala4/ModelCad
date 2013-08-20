@@ -1,8 +1,8 @@
 object FKProp: TFKProp
-  Left = 261
-  Top = 150
+  Left = 615
+  Top = 221
   BorderStyle = bsDialog
-  Caption = 'Усилительное звено'
+  Caption = #1059#1089#1080#1083#1080#1090#1077#1083#1100#1085#1086#1077' '#1079#1074#1077#1085#1086
   ClientHeight = 239
   ClientWidth = 334
   Color = clBtnFace
@@ -12,7 +12,7 @@ object FKProp: TFKProp
   Font.Name = 'MS Sans Serif'
   Font.Style = []
   OldCreateOrder = False
-  Position = poDesktopCenter
+  Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 13
   object BtOk: TButton
@@ -39,14 +39,14 @@ object FKProp: TFKProp
     Top = 152
     Width = 321
     Height = 49
-    Caption = 'Параметры:'
+    Caption = #1055#1072#1088#1072#1084#1077#1090#1088#1099':'
     TabOrder = 0
     object LK: TLabel
       Left = 8
       Top = 22
       Width = 193
       Height = 13
-      Caption = 'Коэффициент пропорциональности K:'
+      Caption = #1050#1086#1101#1092#1092#1080#1094#1080#1077#1085#1090' '#1087#1088#1086#1087#1086#1088#1094#1080#1086#1085#1072#1083#1100#1085#1086#1089#1090#1080' K:'
       ParentShowHint = False
       ShowHint = True
     end

@@ -1,8 +1,8 @@
 object FIProp: TFIProp
-  Left = 267
-  Top = 177
+  Left = 561
+  Top = 295
   BorderStyle = bsDialog
-  Caption = 'И-регулятор'
+  Caption = #1048'-'#1088#1077#1075#1091#1083#1103#1090#1086#1088
   ClientHeight = 241
   ClientWidth = 334
   Color = clBtnFace
@@ -12,7 +12,7 @@ object FIProp: TFIProp
   Font.Name = 'MS Sans Serif'
   Font.Style = []
   OldCreateOrder = False
-  Position = poDesktopCenter
+  Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 13
   object BtOk: TButton
@@ -39,14 +39,14 @@ object FIProp: TFIProp
     Top = 152
     Width = 321
     Height = 49
-    Caption = 'Параметры:'
+    Caption = #1055#1072#1088#1072#1084#1077#1090#1088#1099':'
     TabOrder = 0
     object LC0: TLabel
       Left = 8
       Top = 22
       Width = 139
       Height = 13
-      Caption = 'Настроечный параметр C0:'
+      Caption = #1053#1072#1089#1090#1088#1086#1077#1095#1085#1099#1081' '#1087#1072#1088#1072#1084#1077#1090#1088' C0:'
       ParentShowHint = False
       ShowHint = True
     end

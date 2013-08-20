@@ -1,8 +1,8 @@
 object FZProp: TFZProp
-  Left = 232
-  Top = 174
+  Left = 593
+  Top = 391
   BorderStyle = bsDialog
-  Caption = 'Дискретное передаточное звено'
+  Caption = #1044#1080#1089#1082#1088#1077#1090#1085#1086#1077' '#1087#1077#1088#1077#1076#1072#1090#1086#1095#1085#1086#1077' '#1079#1074#1077#1085#1086
   ClientHeight = 240
   ClientWidth = 334
   Color = clBtnFace
@@ -12,7 +12,7 @@ object FZProp: TFZProp
   Font.Name = 'MS Sans Serif'
   Font.Style = []
   OldCreateOrder = False
-  Position = poDesktopCenter
+  Position = poScreenCenter
   OnDestroy = FormDestroy
   PixelsPerInch = 96
   TextHeight = 13
@@ -1930,7 +1930,7 @@ object FZProp: TFZProp
     Top = 80
     Width = 321
     Height = 121
-    Caption = 'Параметры:'
+    Caption = #1055#1072#1088#1072#1084#1077#1090#1088#1099':'
     TabOrder = 0
     object LBz: TLabel
       Left = 114

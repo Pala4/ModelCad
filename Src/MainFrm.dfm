@@ -1,6 +1,6 @@
 object FMain: TFMain
-  Left = 202
-  Top = 118
+  Left = 299
+  Top = 282
   AutoScroll = False
   Caption = 'Model Cad v1.0'
   ClientHeight = 339
@@ -35,7 +35,7 @@ object FMain: TFMain
       Height = 22
       Align = alNone
       AutoSize = True
-      Caption = 'Стандартные'
+      Caption = #1057#1090#1072#1085#1076#1072#1088#1090#1085#1099#1077
       DragKind = dkDock
       DragMode = dmAutomatic
       EdgeBorders = []
@@ -45,7 +45,7 @@ object FMain: TFMain
       object TBtNew: TToolButton
         Left = 0
         Top = 0
-        Hint = 'Новый'
+        Hint = #1053#1086#1074#1099#1081
         ImageIndex = 4
         ParentShowHint = False
         ShowHint = True
@@ -54,7 +54,7 @@ object FMain: TFMain
       object TBtOpen: TToolButton
         Left = 23
         Top = 0
-        Hint = 'Открыть'
+        Hint = #1054#1090#1082#1088#1099#1090#1100
         ImageIndex = 12
         ParentShowHint = False
         ShowHint = True
@@ -63,7 +63,7 @@ object FMain: TFMain
       object TBtSave: TToolButton
         Left = 46
         Top = 0
-        Hint = 'Сохранить'
+        Hint = #1057#1086#1093#1088#1072#1085#1080#1090#1100
         Caption = 'TBtSave'
         ImageIndex = 6
         ParentShowHint = False
@@ -73,7 +73,7 @@ object FMain: TFMain
       object TBtSaveAll: TToolButton
         Left = 69
         Top = 0
-        Hint = 'Сохранить все'
+        Hint = #1057#1086#1093#1088#1072#1085#1080#1090#1100' '#1074#1089#1077
         ImageIndex = 8
         ParentShowHint = False
         ShowHint = True
@@ -86,7 +86,7 @@ object FMain: TFMain
       Width = 23
       Height = 22
       AutoSize = True
-      Caption = 'Опции'
+      Caption = #1054#1087#1094#1080#1080
       DragKind = dkDock
       DragMode = dmAutomatic
       EdgeBorders = []
@@ -107,7 +107,7 @@ object FMain: TFMain
       Width = 92
       Height = 22
       AutoSize = True
-      Caption = 'Вычисление'
+      Caption = #1042#1099#1095#1080#1089#1083#1077#1085#1080#1077
       DragKind = dkDock
       DragMode = dmAutomatic
       EdgeBorders = []
@@ -117,7 +117,7 @@ object FMain: TFMain
       object TBtCalc: TToolButton
         Left = 0
         Top = 0
-        Hint = 'Вычислить'
+        Hint = #1042#1099#1095#1080#1089#1083#1080#1090#1100
         Caption = 'TBtCalc'
         ImageIndex = 14
         ParentShowHint = False
@@ -127,7 +127,7 @@ object FMain: TFMain
       object TBtProperty: TToolButton
         Left = 23
         Top = 0
-        Hint = 'Свойства'
+        Hint = #1057#1074#1086#1081#1089#1090#1074#1072
         Enabled = False
         ImageIndex = 19
         ParentShowHint = False
@@ -137,8 +137,8 @@ object FMain: TFMain
       object TBtCalcParam: TToolButton
         Left = 46
         Top = 0
-        Hint = 'Параметры расчёта'
-        Caption = 'Параметры расчёта'
+        Hint = #1055#1072#1088#1072#1084#1077#1090#1088#1099' '#1088#1072#1089#1095#1105#1090#1072
+        Caption = #1055#1072#1088#1072#1084#1077#1090#1088#1099' '#1088#1072#1089#1095#1105#1090#1072
         ImageIndex = 21
         ParentShowHint = False
         ShowHint = True
@@ -147,8 +147,8 @@ object FMain: TFMain
       object TBtGrp: TToolButton
         Left = 69
         Top = 0
-        Hint = 'График'
-        Caption = 'График'
+        Hint = #1043#1088#1072#1092#1080#1082
+        Caption = #1043#1088#1072#1092#1080#1082
         Enabled = False
         ImageIndex = 17
         ParentShowHint = False
@@ -183,9 +183,9 @@ object FMain: TFMain
     Left = 198
     Top = 8
     object MIFile: TMenuItem
-      Caption = '&Файл'
+      Caption = '&'#1060#1072#1081#1083
       object MINew: TMenuItem
-        Caption = '&Новый проект'
+        Caption = '&'#1053#1086#1074#1099#1081' '#1087#1088#1086#1077#1082#1090
         ImageIndex = 4
         OnClick = NewClick
       end
@@ -193,7 +193,7 @@ object FMain: TFMain
         Caption = '-'
       end
       object MIOpen: TMenuItem
-        Caption = '&Открыть...'
+        Caption = '&'#1054#1090#1082#1088#1099#1090#1100'...'
         ImageIndex = 12
         OnClick = OpenClick
       end
@@ -201,52 +201,52 @@ object FMain: TFMain
         Caption = '-'
       end
       object MISave: TMenuItem
-        Caption = '&Сохранить'
+        Caption = '&'#1057#1086#1093#1088#1072#1085#1080#1090#1100
         ImageIndex = 6
         ShortCut = 16467
         OnClick = SaveClick
       end
       object MISaveAll: TMenuItem
-        Caption = 'Сохранить все'
+        Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100' '#1074#1089#1077
         ImageIndex = 8
         OnClick = SaveAllClick
       end
       object MISaveAs: TMenuItem
-        Caption = 'Сохранить как...'
+        Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100' '#1082#1072#1082'...'
         ImageIndex = 10
         OnClick = MISaveAsClick
       end
       object MICloseProj: TMenuItem
-        Caption = '&Закрыть проект'
+        Caption = '&'#1047#1072#1082#1088#1099#1090#1100' '#1087#1088#1086#1077#1082#1090
         OnClick = MICloseProjClick
       end
       object MICloseAllProjs: TMenuItem
-        Caption = 'Закрыть все проекты'
+        Caption = #1047#1072#1082#1088#1099#1090#1100' '#1074#1089#1077' '#1087#1088#1086#1077#1082#1090#1099
         OnClick = MICloseAllProjsClick
       end
       object MISeparatSaveSection: TMenuItem
         Caption = '-'
       end
       object MIExit: TMenuItem
-        Caption = '&Выход'
+        Caption = '&'#1042#1099#1093#1086#1076
         ImageIndex = 0
         ShortCut = 16472
         OnClick = ExitClick
       end
     end
     object MIView: TMenuItem
-      Caption = '&Вид'
+      Caption = '&'#1042#1080#1076
       OnClick = MIViewClick
       object MIElBts: TMenuItem
-        Caption = 'Элементы'
+        Caption = #1069#1083#1077#1084#1077#1085#1090#1099
         Checked = True
         OnClick = MIElBtsClick
       end
     end
     object MISettings: TMenuItem
-      Caption = '&Настройки'
+      Caption = '&'#1053#1072#1089#1090#1088#1086#1081#1082#1080
       object MIOptions: TMenuItem
-        Caption = '&Опции...'
+        Caption = '&'#1054#1087#1094#1080#1080'...'
         ImageIndex = 2
         ShortCut = 16463
         OnClick = OptionsClick
@@ -255,18 +255,18 @@ object FMain: TFMain
         Caption = '-'
       end
       object MISaveSettings: TMenuItem
-        Caption = '&Сохранить настройки'
+        Caption = '&'#1057#1086#1093#1088#1072#1085#1080#1090#1100' '#1085#1072#1089#1090#1088#1086#1081#1082#1080
         OnClick = MISaveSettingsClick
       end
       object MISaveDesktop: TMenuItem
-        Caption = 'Сохранить &десктоп'
+        Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100' &'#1076#1077#1089#1082#1090#1086#1087
         OnClick = MISaveDesktopClick
       end
     end
     object MIRun: TMenuItem
-      Caption = 'Выполнить'
+      Caption = #1042#1099#1087#1086#1083#1085#1080#1090#1100
       object MICalcParam: TMenuItem
-        Caption = 'Параметры расчёта...'
+        Caption = #1055#1072#1088#1072#1084#1077#1090#1088#1099' '#1088#1072#1089#1095#1105#1090#1072'...'
         ShortCut = 16466
         OnClick = CalcParamClick
       end
@@ -274,20 +274,20 @@ object FMain: TFMain
         Caption = '-'
       end
       object MIStep: TMenuItem
-        Caption = 'Пошаговый запуск'
+        Caption = #1055#1086#1096#1072#1075#1086#1074#1099#1081' '#1079#1072#1087#1091#1089#1082
         ShortCut = 118
         OnClick = MIStepClick
       end
       object MIStart: TMenuItem
-        Caption = 'Запуск'
+        Caption = #1047#1072#1087#1091#1089#1082
         ShortCut = 120
         OnClick = CalcClick
       end
     end
     object MIElementes: TMenuItem
-      Caption = 'Элементы'
+      Caption = #1069#1083#1077#1084#1077#1085#1090#1099
       object MIProperty: TMenuItem
-        Caption = 'Свойства...'
+        Caption = #1057#1074#1086#1081#1089#1090#1074#1072'...'
         Enabled = False
         ShortCut = 16464
         OnClick = PropertyClick
@@ -299,7 +299,7 @@ object FMain: TFMain
     object MIHelp: TMenuItem
       Caption = '&?'
       object MIAbout: TMenuItem
-        Caption = '&О программе...'
+        Caption = '&'#1054' '#1087#1088#1086#1075#1088#1072#1084#1084#1077'...'
         ShortCut = 112
         OnClick = MIAboutClick
       end

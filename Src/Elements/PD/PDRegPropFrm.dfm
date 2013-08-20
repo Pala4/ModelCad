@@ -1,8 +1,8 @@
 object FPDProp: TFPDProp
-  Left = 288
-  Top = 147
+  Left = 628
+  Top = 308
   BorderStyle = bsDialog
-  Caption = 'ПД-регулятор'
+  Caption = #1055#1044'-'#1088#1077#1075#1091#1083#1103#1090#1086#1088
   ClientHeight = 266
   ClientWidth = 334
   Color = clBtnFace
@@ -12,7 +12,7 @@ object FPDProp: TFPDProp
   Font.Name = 'MS Sans Serif'
   Font.Style = []
   OldCreateOrder = False
-  Position = poDesktopCenter
+  Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 13
   object BtOk: TButton
@@ -39,14 +39,14 @@ object FPDProp: TFPDProp
     Top = 152
     Width = 321
     Height = 73
-    Caption = 'Параметры:'
+    Caption = #1055#1072#1088#1072#1084#1077#1090#1088#1099':'
     TabOrder = 0
     object LC1: TLabel
       Left = 8
       Top = 22
       Width = 139
       Height = 13
-      Caption = 'Настроечный параметр C1:'
+      Caption = #1053#1072#1089#1090#1088#1086#1077#1095#1085#1099#1081' '#1087#1072#1088#1072#1084#1077#1090#1088' C1:'
       ParentShowHint = False
       ShowHint = True
     end
@@ -55,7 +55,7 @@ object FPDProp: TFPDProp
       Top = 46
       Width = 139
       Height = 13
-      Caption = 'Настроечный параметр C2:'
+      Caption = #1053#1072#1089#1090#1088#1086#1077#1095#1085#1099#1081' '#1087#1072#1088#1072#1084#1077#1090#1088' C2:'
       ParentShowHint = False
       ShowHint = True
     end

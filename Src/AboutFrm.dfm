@@ -1,8 +1,8 @@
 object FAbout: TFAbout
-  Left = 323
-  Top = 141
+  Left = 461
+  Top = 340
   BorderStyle = bsNone
-  Caption = 'О программе'
+  Caption = #1054' '#1087#1088#1086#1075#1088#1072#1084#1084#1077
   ClientHeight = 240
   ClientWidth = 320
   Color = clBtnFace
@@ -12,7 +12,7 @@ object FAbout: TFAbout
   Font.Name = 'MS Sans Serif'
   Font.Style = []
   OldCreateOrder = False
-  Position = poDesktopCenter
+  Position = poScreenCenter
   OnKeyPress = FormKeyPress
   PixelsPerInch = 96
   TextHeight = 13

@@ -1,8 +1,8 @@
 object FGaussNoiseProp: TFGaussNoiseProp
-  Left = 241
-  Top = 134
+  Left = 505
+  Top = 331
   BorderStyle = bsDialog
-  Caption = 'Гаусовский шум'
+  Caption = #1043#1072#1091#1089#1086#1074#1089#1082#1080#1081' '#1096#1091#1084
   ClientHeight = 266
   ClientWidth = 334
   Color = clBtnFace
@@ -12,7 +12,7 @@ object FGaussNoiseProp: TFGaussNoiseProp
   Font.Name = 'MS Sans Serif'
   Font.Style = []
   OldCreateOrder = False
-  Position = poDesktopCenter
+  Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 13
   object BtOk: TButton
@@ -39,14 +39,14 @@ object FGaussNoiseProp: TFGaussNoiseProp
     Top = 152
     Width = 321
     Height = 73
-    Caption = 'Параметры:'
+    Caption = #1055#1072#1088#1072#1084#1077#1090#1088#1099':'
     TabOrder = 0
     object LMW: TLabel
       Left = 8
       Top = 22
       Width = 154
       Height = 13
-      Caption = 'Математическое ожидание M:'
+      Caption = #1052#1072#1090#1077#1084#1072#1090#1080#1095#1077#1089#1082#1086#1077' '#1086#1078#1080#1076#1072#1085#1080#1077' M:'
       ParentShowHint = False
       ShowHint = True
     end
@@ -55,7 +55,7 @@ object FGaussNoiseProp: TFGaussNoiseProp
       Top = 46
       Width = 71
       Height = 13
-      Caption = 'Дисперсия D:'
+      Caption = #1044#1080#1089#1087#1077#1088#1089#1080#1103' D:'
       ParentShowHint = False
       ShowHint = True
     end

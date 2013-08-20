@@ -1,8 +1,8 @@
 object FNUBRelayProp: TFNUBRelayProp
-  Left = 240
-  Top = 81
+  Left = 512
+  Top = 192
   BorderStyle = bsDialog
-  Caption = 'Неоднозначное реле'
+  Caption = #1053#1077#1086#1076#1085#1086#1079#1085#1072#1095#1085#1086#1077' '#1088#1077#1083#1077
   ClientHeight = 312
   ClientWidth = 334
   Color = clBtnFace
@@ -12,7 +12,7 @@ object FNUBRelayProp: TFNUBRelayProp
   Font.Name = 'MS Sans Serif'
   Font.Style = []
   OldCreateOrder = False
-  Position = poDesktopCenter
+  Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 13
   object BtOk: TButton
@@ -39,14 +39,14 @@ object FNUBRelayProp: TFNUBRelayProp
     Top = 152
     Width = 321
     Height = 121
-    Caption = 'Параметры:'
+    Caption = #1055#1072#1088#1072#1084#1077#1090#1088#1099':'
     TabOrder = 0
     object LA: TLabel
       Left = 8
       Top = 22
       Width = 187
       Height = 13
-      Caption = 'Ширина зоны нечувствительности A:'
+      Caption = #1064#1080#1088#1080#1085#1072' '#1079#1086#1085#1099' '#1085#1077#1095#1091#1074#1089#1090#1074#1080#1090#1077#1083#1100#1085#1086#1089#1090#1080' A:'
       ParentShowHint = False
       ShowHint = True
     end
@@ -55,7 +55,7 @@ object FNUBRelayProp: TFNUBRelayProp
       Top = 70
       Width = 133
       Height = 13
-      Caption = 'Смещение по абциссе dX:'
+      Caption = #1057#1084#1077#1097#1077#1085#1080#1077' '#1087#1086' '#1072#1073#1094#1080#1089#1089#1077' dX:'
       ParentShowHint = False
       ShowHint = True
     end
@@ -64,7 +64,7 @@ object FNUBRelayProp: TFNUBRelayProp
       Top = 94
       Width = 138
       Height = 13
-      Caption = 'Смещение по ординате dY:'
+      Caption = #1057#1084#1077#1097#1077#1085#1080#1077' '#1087#1086' '#1086#1088#1076#1080#1085#1072#1090#1077' dY:'
       ParentShowHint = False
       ShowHint = True
     end
@@ -73,7 +73,7 @@ object FNUBRelayProp: TFNUBRelayProp
       Top = 46
       Width = 124
       Height = 13
-      Caption = 'Уровень ограничения B:'
+      Caption = #1059#1088#1086#1074#1077#1085#1100' '#1086#1075#1088#1072#1085#1080#1095#1077#1085#1080#1103' B:'
       ParentShowHint = False
       ShowHint = True
     end

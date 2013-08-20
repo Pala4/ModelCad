@@ -1,8 +1,8 @@
 object FSinProp: TFSinProp
-  Left = 218
-  Top = 44
+  Left = 407
+  Top = 225
   BorderStyle = bsDialog
-  Caption = 'Синусоида'
+  Caption = #1057#1080#1085#1091#1089#1086#1080#1076#1072
   ClientHeight = 400
   ClientWidth = 334
   Color = clBtnFace
@@ -12,7 +12,7 @@ object FSinProp: TFSinProp
   Font.Name = 'MS Sans Serif'
   Font.Style = []
   OldCreateOrder = False
-  Position = poDesktopCenter
+  Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 13
   object RGCorner: TRadioGroup
@@ -20,12 +20,12 @@ object FSinProp: TFSinProp
     Top = 152
     Width = 321
     Height = 57
-    Caption = 'Угловое измерение:'
+    Caption = #1059#1075#1083#1086#1074#1086#1077' '#1080#1079#1084#1077#1088#1077#1085#1080#1077':'
     Columns = 2
     ItemIndex = 0
     Items.Strings = (
-      'Градусы'
-      'Радианы')
+      #1043#1088#1072#1076#1091#1089#1099
+      #1056#1072#1076#1080#1072#1085#1099)
     TabOrder = 0
     OnClick = RGCornerClick
   end
@@ -53,14 +53,14 @@ object FSinProp: TFSinProp
     Top = 216
     Width = 321
     Height = 145
-    Caption = 'Параметры:'
+    Caption = #1055#1072#1088#1072#1084#1077#1090#1088#1099':'
     TabOrder = 1
     object LA: TLabel
       Left = 8
       Top = 22
       Width = 68
       Height = 13
-      Caption = 'Амплитуда A:'
+      Caption = #1040#1084#1087#1083#1080#1090#1091#1076#1072' A:'
       ParentShowHint = False
       ShowHint = True
     end
@@ -69,7 +69,7 @@ object FSinProp: TFSinProp
       Top = 70
       Width = 76
       Height = 13
-      Caption = 'Фаза F (град.):'
+      Caption = #1060#1072#1079#1072' F ('#1075#1088#1072#1076'.):'
       ParentShowHint = False
       ShowHint = True
     end
@@ -78,7 +78,7 @@ object FSinProp: TFSinProp
       Top = 46
       Width = 97
       Height = 13
-      Caption = 'Частота W (рад/с):'
+      Caption = #1063#1072#1089#1090#1086#1090#1072' W ('#1088#1072#1076'/'#1089'):'
       ParentShowHint = False
       ShowHint = True
     end
@@ -87,7 +87,7 @@ object FSinProp: TFSinProp
       Top = 94
       Width = 133
       Height = 13
-      Caption = 'Смещение по абциссе dX:'
+      Caption = #1057#1084#1077#1097#1077#1085#1080#1077' '#1087#1086' '#1072#1073#1094#1080#1089#1089#1077' dX:'
       ParentShowHint = False
       ShowHint = True
     end
@@ -96,7 +96,7 @@ object FSinProp: TFSinProp
       Top = 118
       Width = 138
       Height = 13
-      Caption = 'Смещение по ординате dY:'
+      Caption = #1057#1084#1077#1097#1077#1085#1080#1077' '#1087#1086' '#1086#1088#1076#1080#1085#1072#1090#1077' dY:'
       ParentShowHint = False
       ShowHint = True
     end

@@ -1,8 +1,8 @@
 object FUBRelayProp: TFUBRelayProp
-  Left = 233
-  Top = 172
+  Left = 525
+  Top = 203
   BorderStyle = bsDialog
-  Caption = 'Однозначное реле'
+  Caption = #1054#1076#1085#1086#1079#1085#1072#1095#1085#1086#1077' '#1088#1077#1083#1077
   ClientHeight = 290
   ClientWidth = 334
   Color = clBtnFace
@@ -12,7 +12,7 @@ object FUBRelayProp: TFUBRelayProp
   Font.Name = 'MS Sans Serif'
   Font.Style = []
   OldCreateOrder = False
-  Position = poDesktopCenter
+  Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 13
   object BtOk: TButton
@@ -39,14 +39,14 @@ object FUBRelayProp: TFUBRelayProp
     Top = 152
     Width = 321
     Height = 97
-    Caption = 'Параметры:'
+    Caption = #1055#1072#1088#1072#1084#1077#1090#1088#1099':'
     TabOrder = 0
     object LB: TLabel
       Left = 8
       Top = 22
       Width = 124
       Height = 13
-      Caption = 'Уровень ограничения B:'
+      Caption = #1059#1088#1086#1074#1077#1085#1100' '#1086#1075#1088#1072#1085#1080#1095#1077#1085#1080#1103' B:'
       ParentShowHint = False
       ShowHint = True
     end
@@ -55,7 +55,7 @@ object FUBRelayProp: TFUBRelayProp
       Top = 46
       Width = 133
       Height = 13
-      Caption = 'Смещение по абциссе dX:'
+      Caption = #1057#1084#1077#1097#1077#1085#1080#1077' '#1087#1086' '#1072#1073#1094#1080#1089#1089#1077' dX:'
       ParentShowHint = False
       ShowHint = True
     end
@@ -64,7 +64,7 @@ object FUBRelayProp: TFUBRelayProp
       Top = 70
       Width = 138
       Height = 13
-      Caption = 'Смещение по ординате dY:'
+      Caption = #1057#1084#1077#1097#1077#1085#1080#1077' '#1087#1086' '#1086#1088#1076#1080#1085#1072#1090#1077' dY:'
       ParentShowHint = False
       ShowHint = True
     end

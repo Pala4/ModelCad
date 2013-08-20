@@ -1,8 +1,8 @@
 object FFreeProp: TFFreeProp
-  Left = 293
-  Top = 194
+  Left = 583
+  Top = 417
   BorderStyle = bsDialog
-  Caption = 'Произвольная нелинейность'
+  Caption = #1055#1088#1086#1080#1079#1074#1086#1083#1100#1085#1072#1103' '#1085#1077#1083#1080#1085#1077#1081#1085#1086#1089#1090#1100
   ClientHeight = 104
   ClientWidth = 334
   Color = clBtnFace
@@ -12,7 +12,7 @@ object FFreeProp: TFFreeProp
   Font.Name = 'MS Sans Serif'
   Font.Style = []
   OldCreateOrder = False
-  Position = poDesktopCenter
+  Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 13
   object GBxParam: TGroupBox
@@ -20,14 +20,14 @@ object FFreeProp: TFFreeProp
     Top = 3
     Width = 321
     Height = 54
-    Caption = 'Параметры:'
+    Caption = #1055#1072#1088#1072#1084#1077#1090#1088#1099':'
     TabOrder = 0
     object LFormula: TLabel
       Left = 8
       Top = 22
       Width = 51
       Height = 13
-      Caption = 'Формула:'
+      Caption = #1060#1086#1088#1084#1091#1083#1072':'
       ParentShowHint = False
       ShowHint = True
     end

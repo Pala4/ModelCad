@@ -81,9 +81,7 @@ WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {
 	try
 	{
-   	Randomize();
-   	randomize();
-		Application->Initialize();
+ 		Application->Initialize();
 		Application->CreateForm(__classid(TFMain), &FMain);
 		Application->Run();
 	}

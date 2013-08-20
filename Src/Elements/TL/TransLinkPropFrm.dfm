@@ -1,8 +1,8 @@
 object FTransLinkProp: TFTransLinkProp
-  Left = 287
-  Top = 105
+  Left = 715
+  Top = 258
   BorderStyle = bsDialog
-  Caption = 'Передаточное звено'
+  Caption = #1055#1077#1088#1077#1076#1072#1090#1086#1095#1085#1086#1077' '#1079#1074#1077#1085#1086
   ClientHeight = 413
   ClientWidth = 334
   Color = clBtnFace
@@ -12,7 +12,7 @@ object FTransLinkProp: TFTransLinkProp
   Font.Name = 'MS Sans Serif'
   Font.Style = []
   OldCreateOrder = False
-  Position = poDesktopCenter
+  Position = poScreenCenter
   OnDestroy = FormDestroy
   PixelsPerInch = 96
   TextHeight = 13
@@ -3833,19 +3833,19 @@ object FTransLinkProp: TFTransLinkProp
     Top = 80
     Width = 321
     Height = 297
-    Caption = 'Параметры:'
+    Caption = #1055#1072#1088#1072#1084#1077#1090#1088#1099':'
     TabOrder = 0
     object RGAlgType: TRadioGroup
       Left = 7
       Top = 56
       Width = 307
       Height = 81
-      Caption = 'Алгоритм:'
+      Caption = #1040#1083#1075#1086#1088#1080#1090#1084':'
       ItemIndex = 0
       Items.Strings = (
-        'Z-преобразование'
-        'Преобразование Рагаззини-Бергера '
-        'Метод дифференциальных разностей')
+        'Z-'#1087#1088#1077#1086#1073#1088#1072#1079#1086#1074#1072#1085#1080#1077
+        #1055#1088#1077#1086#1073#1088#1072#1079#1086#1074#1072#1085#1080#1077' '#1056#1072#1075#1072#1079#1079#1080#1085#1080'-'#1041#1077#1088#1075#1077#1088#1072' '
+        #1052#1077#1090#1086#1076' '#1076#1080#1092#1092#1077#1088#1077#1085#1094#1080#1072#1083#1100#1085#1099#1093' '#1088#1072#1079#1085#1086#1089#1090#1077#1081)
       ParentShowHint = False
       ShowHint = True
       TabOrder = 1
@@ -3856,12 +3856,12 @@ object FTransLinkProp: TFTransLinkProp
       Top = 16
       Width = 307
       Height = 33
-      Caption = 'Тип модели объекта:'
+      Caption = #1058#1080#1087' '#1084#1086#1076#1077#1083#1080' '#1086#1073#1098#1077#1082#1090#1072':'
       Columns = 2
       ItemIndex = 0
       Items.Strings = (
-        'Общий'
-        'С постоянными времени')
+        #1054#1073#1097#1080#1081
+        #1057' '#1087#1086#1089#1090#1086#1103#1085#1085#1099#1084#1080' '#1074#1088#1077#1084#1077#1085#1080)
       ParentShowHint = False
       ShowHint = True
       TabOrder = 0
@@ -3872,7 +3872,7 @@ object FTransLinkProp: TFTransLinkProp
       Top = 144
       Width = 307
       Height = 145
-      Caption = 'Передаточная функция:'
+      Caption = #1055#1077#1088#1077#1076#1072#1090#1086#1095#1085#1072#1103' '#1092#1091#1085#1082#1094#1080#1103':'
       TabOrder = 2
       object LTLDiv: TLabel
         Left = 73
@@ -3971,7 +3971,7 @@ object FTransLinkProp: TFTransLinkProp
         Top = 112
         Width = 105
         Height = 25
-        Caption = 'Характеристики...'
+        Caption = #1061#1072#1088#1072#1082#1090#1077#1088#1080#1089#1090#1080#1082#1080'...'
         ParentShowHint = False
         ShowHint = True
         TabOrder = 3

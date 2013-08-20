@@ -1,6 +1,6 @@
 object FGrp: TFGrp
-  Left = 276
-  Top = 228
+  Left = 648
+  Top = 379
   Width = 470
   Height = 314
   Color = clBtnFace
@@ -12,6 +12,7 @@ object FGrp: TFGrp
   FormStyle = fsStayOnTop
   Menu = MGrp
   OldCreateOrder = False
+  Position = poScreenCenter
   OnClose = FormClose
   OnCreate = FormCreate
   OnDestroy = FormDestroy
@@ -19,8 +20,8 @@ object FGrp: TFGrp
   TextHeight = 13
   object StBrGrp: TStatusBar
     Left = 0
-    Top = 241
-    Width = 462
+    Top = 237
+    Width = 454
     Height = 19
     Panels = <
       item
@@ -34,8 +35,8 @@ object FGrp: TFGrp
   object ScrBxGrp: TScrollBox
     Left = 0
     Top = 0
-    Width = 462
-    Height = 241
+    Width = 454
+    Height = 237
     Align = alClient
     BorderStyle = bsNone
     TabOrder = 1
@@ -44,9 +45,9 @@ object FGrp: TFGrp
     Left = 424
     Top = 8
     object MIFile: TMenuItem
-      Caption = '&Файл'
+      Caption = '&'#1060#1072#1081#1083
       object MIParam: TMenuItem
-        Caption = 'Параметры диаграммы...'
+        Caption = #1055#1072#1088#1072#1084#1077#1090#1088#1099' '#1076#1080#1072#1075#1088#1072#1084#1084#1099'...'
         ShortCut = 16463
         OnClick = MIParamClick
       end
@@ -54,70 +55,70 @@ object FGrp: TFGrp
         Caption = '-'
       end
       object MIPageParam: TMenuItem
-        Caption = 'Параметры страницы...'
+        Caption = #1055#1072#1088#1072#1084#1077#1090#1088#1099' '#1089#1090#1088#1072#1085#1080#1094#1099'...'
       end
       object MIPreView: TMenuItem
-        Caption = 'Предварительный просмотр...'
+        Caption = #1055#1088#1077#1076#1074#1072#1088#1080#1090#1077#1083#1100#1085#1099#1081' '#1087#1088#1086#1089#1084#1086#1090#1088'...'
       end
       object MIPrint: TMenuItem
-        Caption = 'Печать...'
+        Caption = #1055#1077#1095#1072#1090#1100'...'
       end
       object N2: TMenuItem
         Caption = '-'
       end
       object MIClose: TMenuItem
-        Caption = '&Закрыть'
+        Caption = '&'#1047#1072#1082#1088#1099#1090#1100
         ShortCut = 16453
         OnClick = MICloseClick
       end
     end
     object MIEdit: TMenuItem
-      Caption = '&Правка'
+      Caption = '&'#1055#1088#1072#1074#1082#1072
       OnClick = MICheckClick
       object MIClearDiagram: TMenuItem
-        Caption = 'Очистить диаграмму'
+        Caption = #1054#1095#1080#1089#1090#1080#1090#1100' '#1076#1080#1072#1075#1088#1072#1084#1084#1091
         OnClick = MIClearDiagramClick
       end
       object N5: TMenuItem
         Caption = '-'
       end
       object MICut: TMenuItem
-        Caption = 'Вырезать'
+        Caption = #1042#1099#1088#1077#1079#1072#1090#1100
         ShortCut = 16472
       end
       object MICopy: TMenuItem
-        Caption = 'Копировать'
+        Caption = #1050#1086#1087#1080#1088#1086#1074#1072#1090#1100
         ShortCut = 16451
         OnClick = MICopyClick
       end
       object MIPast: TMenuItem
-        Caption = 'Вставить'
+        Caption = #1042#1089#1090#1072#1074#1080#1090#1100
         ShortCut = 16470
         OnClick = MIPastClick
       end
       object MIDel: TMenuItem
-        Caption = 'Удалить'
+        Caption = #1059#1076#1072#1083#1080#1090#1100
         ShortCut = 16430
         OnClick = MIDelClick
       end
       object MISelectAll: TMenuItem
-        Caption = 'Выделить все'
+        Caption = #1042#1099#1076#1077#1083#1080#1090#1100' '#1074#1089#1077
         ShortCut = 16449
         OnClick = MISelectAllClick
       end
     end
     object MIClipBoard: TMenuItem
-      Caption = 'Буфер обмена'
+      Caption = #1041#1091#1092#1077#1088' '#1086#1073#1084#1077#1085#1072
       OnClick = MICheckClick
       object MICBClear: TMenuItem
-        Caption = 'Очистить буфер'
+        Caption = #1054#1095#1080#1089#1090#1080#1090#1100' '#1073#1091#1092#1077#1088
         OnClick = MICBClearClick
       end
       object N4: TMenuItem
         Caption = '-'
       end
       object MICopyData: TMenuItem
-        Caption = 'Копировать данные'
+        Caption = #1050#1086#1087#1080#1088#1086#1074#1072#1090#1100' '#1076#1072#1085#1085#1099#1077
         OnClick = MICopyDataClick
       end
     end

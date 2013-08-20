@@ -1,8 +1,8 @@
 object FChar: TFChar
-  Left = 248
-  Top = 195
+  Left = 677
+  Top = 320
   BorderStyle = bsDialog
-  Caption = 'Характеристики'
+  Caption = #1061#1072#1088#1072#1082#1090#1077#1088#1080#1089#1090#1080#1082#1080
   ClientHeight = 177
   ClientWidth = 334
   Color = clBtnFace
@@ -12,7 +12,7 @@ object FChar: TFChar
   Font.Name = 'MS Sans Serif'
   Font.Style = []
   OldCreateOrder = False
-  Position = poDesktopCenter
+  Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 13
   object PCChars: TPageControl
@@ -21,15 +21,16 @@ object FChar: TFChar
     Width = 321
     Height = 129
     ActivePage = TSTemp
+    TabIndex = 0
     TabOrder = 0
     object TSTemp: TTabSheet
-      Caption = 'Временные'
+      Caption = #1042#1088#1077#1084#1077#1085#1085#1099#1077
       object LTempWidth: TLabel
         Left = 167
         Top = 8
         Width = 111
         Height = 13
-        Caption = 'Временной диапазон:'
+        Caption = #1042#1088#1077#1084#1077#1085#1085#1086#1081' '#1076#1080#1072#1087#1072#1079#1086#1085':'
         ParentShowHint = False
         ShowHint = True
       end
@@ -51,7 +52,7 @@ object FChar: TFChar
         Top = 52
         Width = 76
         Height = 13
-        Caption = 'Дискретность:'
+        Caption = #1044#1080#1089#1082#1088#1077#1090#1085#1086#1089#1090#1100':'
         ParentShowHint = False
         ShowHint = True
       end
@@ -61,8 +62,8 @@ object FChar: TFChar
         Width = 154
         Height = 97
         Items.Strings = (
-          'Переходная h(t)'
-          'Весовая k(t)')
+          #1055#1077#1088#1077#1093#1086#1076#1085#1072#1103' h(t)'
+          #1042#1077#1089#1086#1074#1072#1103' k(t)')
         ParentShowHint = False
         ShowHint = True
         TabOrder = 0
@@ -94,7 +95,7 @@ object FChar: TFChar
       end
     end
     object TSFreq: TTabSheet
-      Caption = 'Частотные'
+      Caption = #1063#1072#1089#1090#1086#1090#1085#1099#1077
       ImageIndex = 1
       object LFreqS: TLabel
         Left = 232
@@ -114,7 +115,7 @@ object FChar: TFChar
         Top = 8
         Width = 110
         Height = 13
-        Caption = 'Частотный диапазон:'
+        Caption = #1063#1072#1089#1090#1086#1090#1085#1099#1081' '#1076#1080#1072#1087#1072#1079#1086#1085':'
         ParentShowHint = False
         ShowHint = True
       end
@@ -123,7 +124,7 @@ object FChar: TFChar
         Top = 52
         Width = 76
         Height = 13
-        Caption = 'Дискретность:'
+        Caption = #1044#1080#1089#1082#1088#1077#1090#1085#1086#1089#1090#1100':'
         ParentShowHint = False
         ShowHint = True
       end
@@ -134,12 +135,12 @@ object FChar: TFChar
         Height = 97
         Columns = 2
         Items.Strings = (
-          'АЧХ'
-          'ЛАЧХ'
-          'ФЧХ'
-          'ЛФЧХ'
-          'АФЧХ'
-          'НПЧХ')
+          #1040#1063#1061
+          #1051#1040#1063#1061
+          #1060#1063#1061
+          #1051#1060#1063#1061
+          #1040#1060#1063#1061
+          #1053#1055#1063#1061)
         ParentShowHint = False
         ShowHint = True
         TabOrder = 0
@@ -173,7 +174,7 @@ object FChar: TFChar
     Top = 104
     Width = 89
     Height = 25
-    Caption = 'Отобразить>>'
+    Caption = #1054#1090#1086#1073#1088#1072#1079#1080#1090#1100'>>'
     ParentShowHint = False
     ShowHint = True
     TabOrder = 1
