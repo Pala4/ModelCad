@@ -38,7 +38,7 @@ void C1P::FUNKCIJA(int index, int end, long double DT)
       {
       	delete []YN_1;
          YN_1 = NULL;
-         YN_1 = new std::complex <long double>[N];
+         YN_1 = new complex <long double>[N];
       }
       if(index == 0)
       	Out[index] = DT*In[index];

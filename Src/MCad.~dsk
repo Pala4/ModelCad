@@ -1,26 +1,19 @@
 [Closed Files]
-File_0=SourceModule,'c:\program files (x86)\borland\cbuilder6\include\complex.h',0,1,1,24,16,0,0
-File_1=SourceModule,'c:\program files (x86)\borland\cbuilder6\include\oldstl\complex.h',0,1,91,1,1,0,0
-File_2=SourceModule,'D:\ImageD\CPP\Projects\Model Cad S00191\Src\Elements\MCElement.cpp',0,1,40,1,1,0,0
-File_3=SourceModule,'D:\DEVELOP\CBUILDER5\INCLUDE\VCL\forms.hpp',0,1,922,1,932,0,0
-File_4=SourceModule,'D:\develop\CBuilder5\Projects\Model Cad S0019\Src\Elements\TL\TransLinkPropFrm.cpp',0,1,66,1,76,0,0
-File_5=SourceModule,'D:\develop\CBuilder5\Projects\Model Cad S0019\Src\Elements\TL\MCTL.cpp',0,1,1,1,1,0,0
-File_6=SourceModule,'D:\develop\CBuilder5\Projects\Model Cad S0019\Src\Elements\MCStdElement.cpp',0,1,29,1,42,0,0
-File_7=SourceModule,'D:\develop\CBuilder5\Projects\Model Cad S0019\Src\GrpApi\Grp.cpp',0,1,604,51,613,0,0
-File_8=SourceModule,'D:\develop\CBuilder5\Projects\Model Cad S0019\Src\GrpApi\GrpWin.cpp',0,1,10,42,13,1,0
-File_9=SourceModule,'D:\develop\CBuilder5\Projects\Model Cad S0019\Src\MCFile.cpp',0,1,1,15,4,0,0
+File_0=SourceModule,'D:\ImageD\CPP\Projects\Model Cad S00191\Src\Elements\MCElement.cpp',0,1,40,1,1,0,0
+File_1=SourceModule,'D:\DEVELOP\CBUILDER5\INCLUDE\VCL\forms.hpp',0,1,922,1,932,0,0
+File_2=SourceModule,'D:\develop\CBuilder5\Projects\Model Cad S0019\Src\Elements\TL\TransLinkPropFrm.cpp',0,1,66,1,76,0,0
+File_3=SourceModule,'D:\develop\CBuilder5\Projects\Model Cad S0019\Src\Elements\TL\MCTL.cpp',0,1,1,1,1,0,0
+File_4=SourceModule,'D:\develop\CBuilder5\Projects\Model Cad S0019\Src\Elements\MCStdElement.cpp',0,1,29,1,42,0,0
+File_5=SourceModule,'D:\develop\CBuilder5\Projects\Model Cad S0019\Src\GrpApi\Grp.cpp',0,1,604,51,613,0,0
+File_6=SourceModule,'D:\develop\CBuilder5\Projects\Model Cad S0019\Src\GrpApi\GrpWin.cpp',0,1,10,42,13,1,0
+File_7=SourceModule,'D:\develop\CBuilder5\Projects\Model Cad S0019\Src\MCFile.cpp',0,1,1,15,4,0,0
+File_8=SourceModule,'D:\develop\CBuilder5\Projects\Model Cad S0019\Src\Elements\PI\MCPI.cpp',0,1,30,1,43,0,0
 
 [Modules]
-Module0=D:\Dev\Projects\Borland\ModelCad\Src\GrpApi\Grp.cpp
-Module1=D:\Dev\Projects\Borland\ModelCad\Src\GrpFrm.cpp
-Module2=D:\Dev\Projects\Borland\ModelCad\Src\MCad.bpr
-Count=3
+Module0=D:\Dev\Projects\Borland\ModelCad\Src\GrpFrm.cpp
+Module1=D:\Dev\Projects\Borland\ModelCad\Src\MCad.bpr
+Count=2
 EditWindowCount=1
-
-[D:\Dev\Projects\Borland\ModelCad\Src\GrpApi\Grp.cpp]
-ModuleType=SourceModule
-FormState=0
-FormOnTop=0
 
 [D:\Dev\Projects\Borland\ModelCad\Src\GrpFrm.cpp]
 ModuleType=SourceModule
@@ -37,11 +30,10 @@ FormState=0
 FormOnTop=0
 
 [EditWindow0]
-ViewCount=3
-CurrentView=2
+ViewCount=2
+CurrentView=1
 View0=0
 View1=1
-View2=2
 CodeExplorer=CodeExplorer@EditWindow0
 MessageView=MessageView@EditWindow0
 ClassHierarchy=ClassHierarchy@EditWindow0
@@ -58,7 +50,7 @@ ClientWidth=1655
 ClientHeight=881
 LeftPanelSize=0
 RightPanelSize=0
-BottomPanelSize=140
+BottomPanelSize=52
 BottomPanelClients=MessageView@EditWindow0
 BottomPanelData=000004000000000000000000000000000000000000000000000100000000000000000B0000004D65737361676556696577FFFFFFFF
 
@@ -74,13 +66,6 @@ Module=D:\Dev\Projects\Borland\ModelCad\Src\GrpFrm.cpp
 CursorX=1
 CursorY=1
 TopLine=1
-LeftCol=1
-
-[View2]
-Module=D:\Dev\Projects\Borland\ModelCad\Src\GrpApi\Grp.cpp
-CursorX=67
-CursorY=953
-TopLine=934
 LeftCol=1
 
 [Watches]
@@ -99,7 +84,7 @@ Visible=1
 State=2
 Left=0
 Top=0
-Width=1920
+Width=1024
 Height=122
 MaxLeft=-1
 MaxTop=-1
@@ -250,12 +235,12 @@ State=0
 Left=12
 Top=0
 Width=1643
-Height=140
+Height=52
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1643
-ClientHeight=140
-TBDockHeight=140
+ClientHeight=52
+TBDockHeight=52
 LRDockWidth=443
 Dockable=1
 

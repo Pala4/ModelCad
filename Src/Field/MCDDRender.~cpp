@@ -263,10 +263,10 @@ BOOL __fastcall CDDRender::Flip(void)
       	DH = Parent->ClientHeight;
       else
       	DH = Height;
-   	TRect DestRect = Rect(dx, dy,
+   	Windows::TRect DestRect = Rect(dx, dy,
                                      dx + DW,
                                      dy + DH);
-   	TRect SrcRect = Rect(ScrX, ScrY,
+   	Windows::TRect SrcRect = Rect(ScrX, ScrY,
                                     DW + ScrX, DH + ScrY);
    	if(lpDDSPrim->IsLost()) lpDDSPrim->Restore();
    	if(lpDDSBack->IsLost()) lpDDSBack->Restore();

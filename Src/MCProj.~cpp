@@ -833,7 +833,7 @@ void __fastcall CProj::ShowVal(CElement *El, int MX, int MY)
    ResultStr += FloatToStr(Y);
    GetTextExtentPoint32(HW->Canvas->Handle, ResultStr.c_str(),
                         ResultStr.Length() + 2, &TS);
-   TRect rect(TSScheme->ClientToScreen(Point(MX, MY - TS.cy - 4)),
+   Windows::TRect rect(TSScheme->ClientToScreen(Point(MX, MY - TS.cy - 4)),
                        TSScheme->ClientToScreen(Point(MX + TS.cx, MY - 3)));
    HW->ActivateHint(rect, ResultStr);
    ValHintShow = true;

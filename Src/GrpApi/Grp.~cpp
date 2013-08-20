@@ -949,7 +949,7 @@ __fastcall CGrps::CGrps(Classes::TComponent *AOwner)
    const TMenuItem **items = new const TMenuItem*[1];
    items[0] = NewItem("Свойства", TextToShortCut(""), false, true, OnMIPropertyClick, 0, "MIProperty");
    PopupMenu = NewPopupMenu(this, "PMGrp", paLeft, true, items, 0);
-   delete []items;
+   delete []Item;
 
 	//HW = new THintWindow(this);
    //HW->Parent = this;

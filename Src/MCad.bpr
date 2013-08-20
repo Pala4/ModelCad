@@ -4,7 +4,7 @@
   <MACROS>
     <VERSION value="BCB.06.00"/>
     <PROJECT value="..\Release\MCad.exe"/>
-    <OBJFILES value="MCad.obj GrpFrm.obj compl.obj MCBase.obj MCFile.obj MCOptions.obj 
+    <OBJFILES value="MCad.obj GrpFrm.obj COMPL.obj MCBase.obj MCFile.obj MCOptions.obj 
       MCSys.obj nrutil.obj Unit_VvodPerFunc.obj polynom.obj ProjFrm.obj 
       OptionsFrm.obj GrpApi\Grp.obj GrpApi\PropFrm.obj Els.obj MCProj.obj 
       MCApp.obj MainFrm.obj MCElBts.obj SmPropFrm.obj InPropFrm.obj 

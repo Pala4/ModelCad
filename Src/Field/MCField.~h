@@ -14,9 +14,9 @@ private:
    BOOL Visible;
    BOOL DrawLinkOrient;
    BOOL BPP256;
-   TRect SvFrameRect;
-   TRect FrameRect;
-   TRect LORect;
+   Windows::TRect SvFrameRect;
+   Windows::TRect FrameRect;
+   Windows::TRect LORect;
    LPDIRECTDRAWSURFACE lpDDS;
    TColor FrameColor;
    TColor LOFrameColor;

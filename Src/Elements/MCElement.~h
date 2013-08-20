@@ -52,7 +52,7 @@ public:
 	T_ID ID_ELEM;
 	T_ID ID_OBJECT;
 	LPDIRECTDRAWSURFACE lpDDS;
-	std::complex <long double>Y_out;
+	complex <long double>Y_out;
 	CElement(void);
    virtual void __fastcall Create(LPDIRECTDRAW lpDDraw, LPSTR ResName,
                                   int _Left, int _Top, DWORD _Width, DWORD _Height,

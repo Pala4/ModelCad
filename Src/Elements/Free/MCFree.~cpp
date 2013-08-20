@@ -394,7 +394,7 @@ void __fastcall CFree::SetData(void)
 void CFree::FUNKCIJA(int index, int end, long double DT)
 {
 	WASERR = erNO;
-	Out[index] = std::complex <long double>(Interpretator(real(In[index])), 0.0);
+	Out[index] = complex <long double>(Interpretator(real(In[index])), 0.0);
 }
 //---------------------------------------------------------------------------
 void __fastcall CFree::GetDump(void *&Dump, DWORD &DumpSize)

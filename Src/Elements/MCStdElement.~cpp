@@ -60,8 +60,8 @@ void CStdElement::VICHISLENIE(int index, int end, long double DT)
  		Y_out = 0;
  		delete []Out; Out = NULL;
  		delete []In; In = NULL;
- 		Out = new std::complex<long double>[end];
- 		In = new std::complex<long double>[end];
+ 		Out = new complex<long double>[end];
+ 		In = new complex<long double>[end];
    }
    In[index] = ((CElement*)Input)->Y_out;
 	FUNKCIJA(index, end, DT);

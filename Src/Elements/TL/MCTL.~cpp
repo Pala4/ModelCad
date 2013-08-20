@@ -1433,15 +1433,15 @@ void __fastcall CTransLink::SetDump(void *&Dump, DWORD &DumpSize)
       stepen--;
       ii--;
    }
-   U_kof = new std::complex<long double>[stepen + U_Stepen + 1];
-   V_kof = new std::complex<long double>[stepen + 1];
+   U_kof = new complex<long double>[stepen + U_Stepen + 1];
+   V_kof = new complex<long double>[stepen + 1];
    for(int i = 0; i < stepen + 1; i++)
    {
-     	V_kof[i] = std::complex<long double>(B_i[i], 0.0);
+     	V_kof[i] = complex<long double>(B_i[i], 0.0);
    }
    for(int i = 0; i < stepen + U_Stepen + 1; i++)
    {
-     	U_kof[i] = std::complex<long double>(A_i[i], 0.0);
+     	U_kof[i] = complex<long double>(A_i[i], 0.0);
    }
    if(stepen <= 0) ERROR_V = true;
    delete []B_i;
